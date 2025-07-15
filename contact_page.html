@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | Bluzen Medical</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(to bottom, #ffffff 0%, #f4f9ff 60%, #e6f0f8 100%);
+    
+    }
+
+    nav {
+      background-color: #004080;
+      padding: 20px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8em;
+      margin-bottom: 10px;
+    }
+
+    .section {
+      background-color: #f4f9ff;
+      padding: 100px 10%;
+      text-align: center;
+    }
+
+    .card {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+    }
+
+    .fade-in-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease forwards;
+    }
+
+    .fade-in-up.stagger-1 {
+      animation-delay: 0.2s;
+    }
+
+    .fade-in-up.stagger-2 {
+      animation-delay: 0.4s;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1em;
+    }
+
+    .btn {
+      background-color: #0073e6;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      .section > div,
+      .section form {
+        flex: 1 1 100% !important;
+      }
+    }
+  .fade-in-up-footer {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUpFooter 1s ease forwards;
+  animation-delay: 0.6s;
+}
+
+@keyframes fadeInUpFooter {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<nav class="main-nav" style="background-color: #fff; box-shadow: 0 2px 10px rgba(0,0,0,0.1); padding: 10px 5%; position: sticky; top: 0; z-index: 1000;">
+  <div class="nav-container" style="display: flex; align-items: center; justify-content: space-between; max-width: 1200px; margin: auto; padding: 0 40px; gap: 100px;">
+    <a href="#" style="font-size: 1.6em; font-weight: bold; color: #004080; text-decoration: none;">Bluzen Medical</a>
+    <div class="nav-menu" style="display: flex; gap: 50px; align-items: center;">
+      <a href="#job-listings" style="color: #004080; text-decoration: none; font-weight: 500;">Jobs</a>
+      <a href="#about" style="color: #004080; text-decoration: none; font-weight: 500;">Why Bluzen</a>
+      <a href="#contact" style="color: #004080; text-decoration: none; font-weight: 500;">Apply</a>
+      <a href="#contact" style="color: #004080; text-decoration: none; font-weight: 500;">Contact</a>
+      <a href="#contact" class="btn" style="background-color: #0073e6; color: white; padding: 10px 20px; border-radius: 5px; font-weight: 600; transition: background-color 0.3s ease;">Apply Now</a>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <h1>Contact Us</h1>
+  <p>We’re here to connect with you — reach out using the form below</p>
+</header>
+
+<section class="section">
+  <h2 style="font-size: 2.6em; color: #004080; margin-bottom: 30px;">Get in Touch with Bluzen Medical</h2>
+  <p style="max-width: 700px; margin: 0 auto 40px; font-size: 1.2em; color: #444;">
+    We’d love to hear from you! Whether you're looking for a healthcare role or staffing support, our team is here to help.
+  </p>
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px;">
+    <div class="card fade-in-up stagger-1" style="flex: 1 1 300px; line-height: 1.8; padding: 40px;">
+      <h3 style="color: #0073e6; font-size: 1.5em; margin-bottom: 20px;">Contact Information</h3>
+      <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;"></i> 10911 Reisterstown Rd, Owing Mills MD 21117</p>
+      <p><i class="fas fa-phone" style="margin-right: 10px;"></i> (667) 480-9715</p>
+      <p><i class="fas fa-envelope" style="margin-right: 10px;"></i> info@bluzenmedicalhealthcarehsa.com</p>
+    </div>
+
+    <form class="card fade-in-up stagger-2" style="flex: 1 1 400px; display: flex; flex-direction: column; gap: 20px; padding: 40px 50px 40px 40px;">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Your Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="fade-in-up-footer" style="background-color: #004080; color: white; text-align: center; padding: 40px 20px; font-size: 0.9em;">
+  <p>&copy; 2025 Bluzen Medical Healthcare Staffing Agency. All rights reserved.</p>
+  <div>
+    <a href="#" style="color: white; margin: 0 10px; text-decoration: none;"><i class="fab fa-facebook"></i> Facebook</a>
+    <a href="#" style="color: white; margin: 0 10px; text-decoration: none;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+    <a href="#" style="color: white; margin: 0 10px; text-decoration: none;"><i class="fab fa-instagram"></i> Instagram</a>
+  </div>
+</footer>
+
+</body>
+</html>

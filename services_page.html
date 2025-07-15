@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bluzen Medical | Staffing Services</title>
+  <style>
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(to bottom right, #f4f9ff, #e0ffe0, #fff0f5);
+      color: #333;
+    }
+    header {
+      position: relative;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://tse2.mm.bing.net/th/id/OIP.GeNGeaAkrkdYO2UApqH_iAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 120px 20px 140px;
+      animation: fadeInUp 1s ease forwards;
+    }
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      z-index: 2;
+      position: relative;
+    }
+    header p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: auto;
+      z-index: 2;
+      position: relative;
+    }
+    .cta-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  font-size: 1.1em;
+  background-color: #00c896;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 2;
+  position: relative;
+}
+    .cta-button:hover {
+      background-color: #009e76;
+      transform: scale(1.05);
+    }
+    .section {
+      padding: 100px 8%;
+      animation: fadeInUp 1s ease forwards;
+    }
+    .section h2 {
+      text-align: center;
+      color: #004080;
+      font-size: 2.8em;
+      margin-bottom: 30px;
+    }
+    .section p {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 50px;
+      font-size: 1.2em;
+      color: #333;
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 40px;
+    }
+    .hover-effect {
+  background-color: #ffffffdd;
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+    .hover-effect:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+      animation: pulse 0.6s;
+    }
+    .hover-effect img {
+  width: 60px;
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+    .hover-effect:hover img {
+      transform: scale(1.2);
+    }
+    .hover-effect h4 {
+      font-size: 1.5em;
+      color: #009688;
+      margin-bottom: 10px;
+    }
+    .hover-effect p {
+      font-size: 1em;
+      color: #444;
+    }
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 80px;
+    }
+    footer a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+      @keyframes floatBubble {
+      0% { transform: translateY(0) scale(1); opacity: 0.5; }
+      50% { opacity: 0.8; }
+      100% { transform: translateY(-1000px) scale(1.2); opacity: 0; }
+    }
+    .bubbles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+  mask-image: linear-gradient(to bottom, transparent 0%, transparent 20%, black 25%, black 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, transparent 20%, black 25%, black 100%);
+}
+    .bubble {
+      position: absolute;
+      bottom: -50px;
+      background-color: rgba(0, 200, 150, 0.2);
+      border-radius: 50%;
+      animation: floatBubble linear infinite;
+    }
+</style>
+</head>
+<body>
+  <header>
+    <h1>Our Comprehensive Staffing Solutions</h1>
+    <p>Tailored, dependable, and responsive services for healthcare and beyond — built to meet your organization’s unique needs.</p>
+    <a class="cta-button" href="job_listings_section%20(1)%20(1).html">Discover Our Services</a>
+  </header>
+  <section class="section" id="services">
+    <h2>Explore Our Services</h2>
+    <p>At Bluzen Medical Healthcare Staffing Agency, we deliver flexible staffing, expert healthcare professionals, and strategic workforce solutions. Whether short-term, long-term, or crisis-driven, we’re here to empower your success.</p>
+    <div class="services-grid">
+      <div class="hover-effect">
+        <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Staffing Icon">
+        <h4>Tailored Staffing Solutions</h4>
+        <p>Adaptable workforce support including contract, per diem, and direct hire placements across diverse sectors.</p>
+      </div>
+      <div class="hover-effect">
+        <img src="https://cdn-icons-png.flaticon.com/512/3176/3176293.png" alt="Stethoscope Icon">
+        <h4>Healthcare Professionals</h4>
+        <p>Qualified nurses, therapists, assistants, and clinicians ready to deliver outstanding patient care and clinical support.</p>
+      </div>
+      <div class="hover-effect">
+        <img src="https://cdn-icons-png.flaticon.com/512/2920/2920219.png" alt="Compliance Icon">
+        <h4>Credentialing & Compliance</h4>
+        <p>We handle verification, licensing, and compliance to ensure every staff member meets regulatory standards.</p>
+      </div>
+      <div class="hover-effect">
+        <img src="https://cdn-icons-png.flaticon.com/512/3107/3107849.png" alt="Management Icon">
+        <h4>Managed Services</h4>
+        <p>Administrative and operational staffing services to streamline HR processes and boost efficiency.</p>
+      </div>
+      <div class="hover-effect">
+        <img src="https://cdn-icons-png.flaticon.com/512/2969/2969865.png" alt="Emergency Icon">
+        <h4>Rapid Response Staffing</h4>
+        <p>On-demand professionals ready to step in during healthcare emergencies, crises, and surge events.</p>
+      </div>
+      <div class="hover-effect">
+        <img src="https://cdn-icons-png.flaticon.com/512/2747/2747603.png" alt="Consulting Icon">
+        <h4>Workforce Consulting</h4>
+        <p>Customized strategy and training solutions to help organizations build and retain strong healthcare teams.</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>&copy; 2025 Bluzen Medical Healthcare Staffing Agency. All rights reserved.</p>
+    <p>
+      <a href="#">Home</a> |
+      <a href="#">Jobs</a> |
+      <a href="#">Contact</a>
+    </p>
+  </footer>
+<div class="bubbles">
+  <div class="bubble" style="left: 10%; width: 40px; height: 40px; animation-duration: 25s;"></div>
+  <div class="bubble" style="left: 25%; width: 30px; height: 30px; animation-duration: 20s;"></div>
+  <div class="bubble" style="left: 40%; width: 50px; height: 50px; animation-duration: 30s;"></div>
+  <div class="bubble" style="left: 55%; width: 35px; height: 35px; animation-duration: 18s;"></div>
+  <div class="bubble" style="left: 70%; width: 45px; height: 45px; animation-duration: 22s;"></div>
+  <div class="bubble" style="left: 85%; width: 25px; height: 25px; animation-duration: 27s;"></div>
+</div>
+</body>
+</html>
